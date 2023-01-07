@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>PASSWORD GENERATOR</h1>
+        <img src="../Password-Generator-2.0/assets/Images/Padlock.png" class="img" alt="email">
+      </header>
+      <div class="card">
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div id="characterSelectorSection">
+        <div class="sliderContainer">
+          <div id="lengthSelector">
+            <div class="sectionText">Password length</div>
+            <span id="output"></span>
+          </div>
+          <input type="range" value="0" min="10" max="64" id="slider">
+        </div>
+        <div class="characterTypeSelector">
+          <label class="switch">
+            <input type="checkbox" id="lowerCasedSwitch">
+            <span class="slider round"></span>
+          </label>
+          Include lower case characters
+        </div>
+        <div class="characterTypeSelector">
+          <label class="switch">
+            <input type="checkbox" id="upperCasedSwitch">
+            <span class="slider round"></span>
+          </label>
+          Include upper case characters
+        </div>
+        <div class="characterTypeSelector">
+          <label class="switch">
+            <input type="checkbox" id="numericSwitch">
+            <span class="slider round"></span>
+          </label>
+          Include numeric characters
+        </div>
+        <div class="characterTypeSelector">
+          <label class="switch">
+            <input type="checkbox" id="specialSwitch">
+            <span class="slider round"></span>
+          </label>
+          Include special characters
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

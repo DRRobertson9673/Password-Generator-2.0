@@ -1,0 +1,288 @@
+/* added variables to change colours across application */
+:root {
+  --myGreen: rgb(0, 255, 171);
+  --myBlack: #282828;
+  --myGrey: #4d4d4d;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: sans-serif;
+  background-color: var(--myBlack);
+}
+
+.wrapper {
+  padding-top: 30px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  color: white;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--myBlack);
+  color: white;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0px 40px;
+}
+
+.card-body {
+  min-height: 100px;
+  border: 0;
+}
+
+.card-footer {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.card-footer::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.btn {
+  border: none;
+  background-color: var(--myGreen);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color: var(--myGrey);
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
+  width:90%;
+}
+
+button[disabled] {
+  cursor: default;
+  background: #c0c7cf;
+}
+
+.float-right {
+  float: right;
+}
+
+#password {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: var(--myGrey);
+  appearance: none;
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  resize: none;
+  overflow: hidden;
+  color: white;
+  border: 0px;
+}
+
+.characterTypeSelector {
+  padding: 10px 30px 10px 30px;
+  font-weight: lighter;
+  font-size: 15px;
+}
+#characterSelectorSection {
+  background-color: var(--myGrey);
+  padding-bottom: 15px;
+}
+
+.sliderContainer {
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 30px 30px 10px 30px;
+}
+
+/* slider */
+div.sliderContainer {
+  width: 100%;
+  text-align: right;
+ }
+ 
+ #slider {
+   -webkit-appearance: none;
+   appearance: none;
+   height: 3px !important;
+   width: 100%;
+   border-radius: 10em;
+   background-color: #535353;
+   outline: none;
+   margin-bottom: 14px;
+ }
+ 
+ #slider::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   appearance: none;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background: var(--myGreen);
+   cursor: pointer;
+ }
+ 
+ #slider::-moz-range-thumb {
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   background-color: #dbc500;
+   cursor: pointer;
+   border: 3px solid #f4f4f4;
+ }
+ 
+ #output {
+  color: var(--myGreen);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  font-weight:500;
+  margin-left: 5px;
+ }
+
+#lengthSelector {
+  display:flex;
+  justify-content: space-between;
+}
+
+#sectionText {
+  text-align: left;
+}
+
+/* toggle button */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 19px;
+  margin-right: 5px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  padding:3px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+
+  content: "";
+  height: 15px;
+  width: 15px;
+  left:2px;
+  bottom:2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--myGreen);
+}
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+  
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+ .img {
+  padding-left: 20px;
+  padding-bottom: 3px;
+  height: 33px;
+ }
+
+@media (max-width: 762px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #password {
+    font-size: 1rem;
+    padding-top: 20px;
+  }
+  .wrapper {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  header {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 0.8rem;
+  }
+  .wrapper {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
