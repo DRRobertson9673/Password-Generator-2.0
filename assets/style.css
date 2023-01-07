@@ -287,13 +287,14 @@ input:checked + .slider:before {
     padding-right: 0;
   }
   .characterTypeSelector {
-    font-size: 12px;
+    padding: 25px 30px 25px 30px;
+    font-size: 14px;
   }
   .sliderContainer {
-    font-size: 12px;
+    font-size: 14px;
   }
   #output {
-    font-size: 12px;
+    font-size: 14px;
   }
   #lengthSelector {
     padding-bottom: 10px;
