@@ -57,7 +57,7 @@ header {
 }
 
 .card-body {
-  min-height: 100px;
+
   border: 0;
 }
 
@@ -107,9 +107,10 @@ button[disabled] {
   padding-top: 20px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 10px;
   font-size: 1.2rem;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 10px;
   resize: none;
   overflow: hidden;
@@ -277,7 +278,7 @@ input:checked + .slider:before {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .btn {
     font-size: 0.8rem;
   }
@@ -285,4 +286,25 @@ input:checked + .slider:before {
     padding-left: 5%;
     padding-right: 5%;
   }
+  .characterTypeSelector {
+    font-size: 12px;
+  }
+  .sliderContainer {
+    font-size: 12px;
+  }
+  #output {
+    font-size: 12px;
+  }
+  #lengthSelector {
+    padding-bottom: 10px;
+  }
+  header {
+    font-size: 8px;
+  }
+  #password {
+    margin-top: 15px;
+  }
+  #password {
+    padding-top: 10px;
+    font-size: .8rem;
 }
